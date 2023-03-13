@@ -1,0 +1,57 @@
+.navigationMenu {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.8590029761904762) 88%,
+        rgba(0, 212, 255, 0) 100%
+    );
+}
+
+.burger {
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+}
+
+.menuList {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    overflow: hidden;
+    width: 100px;
+    padding: 40px 10px 10px 10px;
+    transition: 0.3s;
+}
+
+.open {
+    opacity: 1;
+}
+
+.close {
+    transform: translate3d(-100px, 0, 0);
+    opacity: 0;
+}
+
+.menuList ul {
+    list-style: none;
+    margin: 0;
+}
+
+.menuList ul li {
+    white-space: nowrap;
+    padding: 3px;
+    transition: transform 0.15s;
+}
+
+.menuList ul li:hover {
+    transform: scale3d(1.1, 1.1, 1) translate3d(10px, 0, 0);
+}
+.toggle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    margin: 10px;
+}
